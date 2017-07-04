@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Trasitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>KWM Facebook App 2017</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> </link>
+    <link rel="stylesheet" type="text/css" href="css/dark-hive/jquery-ui-1.8.10.custom.css"> </link>
+
+    <script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.10.custom.min.js"></script>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyA13T32EhB30fKzbdUlryZqU564MwXL3dU"></script>
+    <script type="text/javascript" src="js/myfb.js"></script>
+</head>
+
+<body>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '468336070166079',
+            xfbml      : true,
+            version    : 'v2.9',
+            cookie	   : true,
+            status	   : true
+        });
+        FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div id="fb-root"></div>
+
+<h1>Friend Roulette</h1>
+
+<button id="login">Login</button>
+
+<button id="showdetails" disabled="true">Me</button>
+<!--<button id="showFriends" disabled="true">Friends</button>-->
+<button id="findMatch" disabled="true">Match</button>
+<button id="logout" disabled="true">Logout</button>
+
+<div id="user" class="content" style="display: none"></div>
+<div id="friends" class="content" style="display: none"></div>
+<div id="details" class="content" style="display: none"></div>
+<div id="likes" class="content" style="display: none"></div>
+
+<div id='map-canvas'></div>
+
+</body>
+</html>

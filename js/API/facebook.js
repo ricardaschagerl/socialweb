@@ -1,13 +1,4 @@
 $(document).ready(function () {
-    $(document).on("click", "#showdetails", function(){
-        console.log("CLICK ME!");
-        showMe();
-    });
-
-    var finished_rendering = function () {
-        $spinner = $("#spinner");
-        $spinner.remove();
-    };
 
     function checkLoginState() {
         FB.getLoginStatus(function (response) {
@@ -22,15 +13,21 @@ $(document).ready(function () {
         // app know the current login status of the person.
         // Full docs on the response object can be found in the documentation
         // for FB.getLoginStatus().
+        $loginButton = $(".fb-login-button").detach();
         if (response.status === 'connected') {
             // Logged into your app and Facebook.
             console.log("Logged in");
+            $loginButton.appendTo("#media-buttons");
             showMe();
         } else {
             // The person is not logged into your app or we are unable to tell.
             console.log("Please Log in");
+            $loginButton.appendTo("#jumbo");
+            deleteMe();
         }
     }
+
+    var loginLogoutEvent = statusChangeCallback;
 
     $.ajaxSetup({cache: true});
     $.getScript('//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.9', function () {
@@ -41,11 +38,18 @@ $(document).ready(function () {
             cookie: true,
             status: true
         });
-        FB.Event.subscribe('xfbml.render', finished_rendering);
-        FB.getLoginStatus(function (response) {
-            statusChangeCallback(response);
-        });
+        FB.Event.subscribe("auth.login", loginLogoutEvent);
+        FB.Event.subscribe("auth.logout", loginLogoutEvent);
+        checkLoginState();
     });
+
+    function deleteMe(){
+        console.log("Logged out - delete user content.")
+        $(".media-object").attr("src", "");
+        $(".media-heading").text("");
+        $(".media-body").text("");
+        $("#userdata").hide();
+    }
 
     function showMe() {
         console.log("Now logged in - should load user data");
@@ -56,8 +60,8 @@ $(document).ready(function () {
             function (response) {
                 if (response != null) {
                     console.log(response);
-                    $(".fb-login-button").hide();
                     currentUser = response;
+
                     $(".media-object").attr("src", "http://graph.facebook.com/" + currentUser.id + "/picture/");
                     $(".media-heading").text(currentUser.name);
                     var text = "";

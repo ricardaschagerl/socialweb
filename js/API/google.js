@@ -16,9 +16,9 @@ $(document).ready(function () {
      map.setCenter(curLatLong);
      console.log("got current pos");
      calculateAndDisplayRoute(curLatLong,userLatLong);
-     */
+
     createMap();
-    initMap();
+    initMap();*/
 });
 
 

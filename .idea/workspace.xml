@@ -1,43 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e0537a7-eb98-4d8a-94f5-29d3eddd0488" name="Default" comment="First Page + Login + Permissions">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/roulette.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/rouletteslider.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/moduls/bootstrap.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/desktop.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/images/desktop.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/images/ui-bg_flat_30_cccccc_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/images/ui-bg_flat_50_5c5c5c_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/images/ui-bg_glass_40_ffc73d_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/images/ui-bg_highlight-hard_20_0972a5_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/images/ui-bg_highlight-soft_35_222222_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/images/ui-bg_highlight-soft_44_444444_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/images/ui-bg_highlight-soft_80_eeeeee_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/images/ui-bg_loop_25_000000_21x21.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/images/ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/images/ui-icons_4b8e0b_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/images/ui-icons_a83300_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/images/ui-icons_cccccc_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/images/ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/dark-hive/jquery-ui-1.8.10.custom.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/desktop.ini" afterPath="" />
+    <list default="true" id="9e0537a7-eb98-4d8a-94f5-29d3eddd0488" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/friends.html" afterPath="$PROJECT_DIR$/html/friends.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/interests.html" afterPath="$PROJECT_DIR$/html/interests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/map.html" afterPath="$PROJECT_DIR$/html/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/API/facebook.js" afterPath="$PROJECT_DIR$/js/API/facebook.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/API/google.js" afterPath="$PROJECT_DIR$/js/API/google.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/myfb.js" afterPath="$PROJECT_DIR$/js/myfb.js" />
     </list>
     <ignored path="Social Media.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,8 +28,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="286">
-                  <caret line="53" column="60" lean-forward="true" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
+                <state relative-caret-position="609">
+                  <caret line="72" column="14" lean-forward="true" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
                   <folding>
                     <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -443,7 +408,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497271431076</updated>
-      <workItem from="1499259717418" duration="17350000" />
+      <workItem from="1499259717418" duration="17396000" />
     </task>
     <task id="LOCAL-00001" summary="change pics directory">
       <created>1499187746077</created>
@@ -452,11 +417,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499187746077</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First Page + Login + Permissions">
+      <created>1499281427807</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1499281427807</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18007000" />
+    <option name="totallyTimeSpent" value="18053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
@@ -489,7 +461,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change pics directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="change pics directory" />
+    <MESSAGE value="First Page + Login + Permissions" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Page + Login + Permissions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -748,8 +721,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="53" column="60" lean-forward="true" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
+        <state relative-caret-position="609">
+          <caret line="72" column="14" lean-forward="true" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

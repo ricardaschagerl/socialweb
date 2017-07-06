@@ -2,7 +2,7 @@ var friendFlag = true;
 
 function showFriends() {
     console.log("Loading friends data...");
-    FB.api("/v2.9/" + $user.id + "/friends", "GET", {"fields": "uid"}, (friends) => {
+    FB.api("/v2.9/" + $user.id + "/friends", "GET", {"fields": "id, name, hometown, location, likes"}, (friends) => {
         if (friends && friends.data) {
             console.log("Friends data found!");
             console.log(friends);
@@ -35,7 +35,7 @@ function addFriend(name, id, hometown, location){
                 '<div class="panel-body">' +
                     '<div class="media">' +
                         '<div class="media-left">' +
-                            '<a href="#">' +
+                            '<a href="interests.html?id='+ id +'">' +
                                 '<img class="media-object" src="http://graph.facebook.com/' + id + '/picture/">' +
                             '</a>' +
                         '</div>' +

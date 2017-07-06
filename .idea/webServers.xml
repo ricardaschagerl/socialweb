@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="20003c00-a70c-4b12-9026-e38a4a5679e7" name="Corinna Webspace FH" url="https://webdav.fh-hagenberg.at/Homepages/KWM-MA/s1610631014/SocialWeb/">
+        <fileTransfer port="0" mountedRoot="C:\Users\endls\AppData\Roaming\Microsoft\Windows\Network Shortcuts\Corinna Homepage" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

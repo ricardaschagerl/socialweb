@@ -28,9 +28,9 @@ a {
 	border: 1px dashed grey;
 }
 
-#map-canvas {
-	width: 600px;
+#map{
 	height: 500px;
+	width: 100%;
 	float:left;
 	background: #fff;
 	margin : 10px;

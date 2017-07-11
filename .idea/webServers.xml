@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="20003c00-a70c-4b12-9026-e38a4a5679e7" name="Corinna Webspace FH" url="https://webdav.fh-hagenberg.at/Homepages/KWM-MA/s1610631014/SocialWeb/">
-        <fileTransfer port="0" mountedRoot="Z:\" accessType="MOUNT" />
+        <fileTransfer port="0" mountedRoot="Z:\SocialWeb" accessType="MOUNT" />
       </webServer>
     </option>
   </component>

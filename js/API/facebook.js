@@ -57,6 +57,10 @@ function showMe() {
                     showFriends();
                 }
 
+                if(typeof window.interestsFlag !== 'undefined'){
+                    showInterests();
+                }
+
                 $(".media-object.me").attr("src", "http://graph.facebook.com/" + currentUser.id + "/picture/");
                 $(".media-heading.me").text(currentUser.name);
                 var text = "";
@@ -76,24 +80,6 @@ function showMe() {
         }
     );
 }
-
-function showLikes(user) {
-    if (user) {
-        let html = user.name + " likes: </br>";
-        FB.api("/" + user.id + "/likes", (likes) => {
-            console.log(likes);
-            if (likes && likes.data) {
-                for (var i = 0; i < likes.data.length; i++) {
-                    html += likes.data[i].name + " - ";
-                }
-                $likes = $("#likes");
-                $likes.html(html);
-                $likes.show();
-            }
-        });
-    }
-}
-
 
 function showLocation() {
     if (hometown != null && hometown.name != null && currentUser != null) {

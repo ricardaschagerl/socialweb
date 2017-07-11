@@ -31,19 +31,19 @@ function addFriend(name, id, hometown, location){
 
     $("#friendContainer").append(
         '<div class="col-md-6">' +
-            '<div class="panel panel-default">' +
-                '<div class="panel-body">' +
-                    '<div class="media">' +
-                        '<div class="media-left">' +
-                            '<a href="interests.html?id='+ id +'">' +
+            '<a href="interests.html?id='+ id +'">' +
+                '<div class="panel panel-default">' +
+                    '<div class="panel-body">' +
+                        '<div class="media">' +
+                            '<div class="media-left">' +
                                 '<img class="media-object" src="http://graph.facebook.com/' + id + '/picture/">' +
-                            '</a>' +
-                        '</div>' +
-                        '<div class="media-body">' +
-                            '<h4 class="media-heading">' + name + '</h4>\n' + $text +
+                            '</div>' +
+                            '<div class="media-body">' +
+                                '<h4 class="media-heading">' + name + '</h4>\n' + $text +
+                            '</div>' +
                         '</div>' +
                     '</div>' +
                 '</div>' +
-            '</div>' +
+            '</a>' +
         '</div>');
 }

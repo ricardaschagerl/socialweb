@@ -1,25 +1,49 @@
-var latitude = 48.31379;
-var longitude = 14.2942;
 var map;
 
-$(document).ready(function () {
-    console.log("Ready to go");
-    /*function displayPosition(position) {
-     latitude = position.coords.latitude;
-     longitude = position.coords.longitude;
-     curLatLong = new google.maps.LatLng(latitude, longitude);
-     var currentLocation = new google.maps.Marker({
-     position: curLatLong,
-     map: map,
-     title: "Your location"
-     });
-     map.setCenter(curLatLong);
-     console.log("got current pos");
-     calculateAndDisplayRoute(curLatLong,userLatLong);
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+    });
+}
+
+function getCoordinatesOfCity(city, coord){
+    var geocoder = new google.maps.Geocoder();
+    if (geocoder) {
+        geocoder.geocode({address: city}, function (results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+                coord = results[0].geometry.location;
+            }
+        });
+    }
+}
+
+function setCenterAndMarkerOnMap(coord, title){
+    map.setCenter(userLatLong);
+    marker = new google.maps.Marker({
+        position: userLatLong,
+        map: map,
+        icon: {url: 'home.gif'},
+        title: currentUser.name
+    });
+}
+
+/* function displayPosition(position) {
+    latitude = position.coords.latitude;
+    longitude = position.coords.longitude;
+    curLatLong = new google.maps.LatLng(latitude, longitude);
+    var currentLocation = new google.maps.Marker({
+        position: curLatLong,
+        map: map,
+        title: "Your location"
+    });
+    map.setCenter(curLatLong);
+    console.log("got current pos");
+    calculateAndDisplayRoute(curLatLong, userLatLong);
 
     createMap();
-    initMap();*/
-});
+    initMap();
+}
 
 
 function calculateAndDisplayRoute(currentPos, hometown) {
@@ -50,7 +74,6 @@ function displayError(positionError) {
 }
 
 function initMap() {
-
     try {
         if (typeof(navigator.geolocation) == 'undefined') {
             alert("I'm sorry, but geolocation services are not supported by your browser.");
@@ -86,7 +109,7 @@ function showLocation() {
                         map.setCenter(userLatLong);
                         /*if (marker != null){
                          marker.setMap(null);
-                         }	*/
+                         }
                         marker = new google.maps.Marker({
                             position: userLatLong,
                             map: map,
@@ -105,4 +128,8 @@ function showLocation() {
     } else {
         alert("User does not provide hometown");
     }
-}
+} */
+
+$(document).ready(function() {
+ initMap();
+});

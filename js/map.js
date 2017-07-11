@@ -1,6 +1,5 @@
-$(document).ready(function() {
-	console.log("Ready to go");
-
-
-
+$(document).ready(function () {
+    $(document).on("click", "#back", function(){
+        window.location.replace("friends.html");
+    });
 });
